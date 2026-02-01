@@ -59,6 +59,24 @@ This is a **Full-Stack Application** designed for high-performance, discovery (S
 ## ✅ Final Production Checklist
 - [ ] Add real `resume.pdf` to `/public`.
 - [ ] Update `portfolio.ts` with your actual email and social links.
-- [ ] Deploy to **Vercel** (Frontend) and **Railway/Render** (Backend).
+
+## 🚀 Deployment Roadmap
+
+### 1. Backend (Server) - Host on Render/Railway
+1.  Sign up for [Render](https://render.com) or [Railway](https://railway.app).
+2.  Connect your GitHub repository.
+3.  Set the **Root Directory** to `backend`.
+4.  Build Command: `npm install`
+5.  Start Command: `node server.js`
+6.  **Environment Variables**: Add `PORT=5000`.
+7.  Copy your live backend URL (e.g., `https://my-backend.onrender.com`).
+
+### 2. Frontend (Client) - Host on Vercel
+1.  Sign up for [Vercel](https://vercel.com).
+2.  Connect your GitHub repository.
+3.  Set the **Root Directory** to `./` (the root).
+4.  Build Command: `npm run build`
+5.  Output Directory: `dist`
+6.  **Environment Variables**: Add `VITE_API_URL=https://my-backend.onrender.com/api/contact`.
 
 **Crafted with excellence. Pro-code for a pro-career.** 🚀💯
